@@ -1,0 +1,825 @@
+/*
+  Provisionales
+*/
+
+#box-reserva div.gdlr-core-item-pdlr {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+header.entry-header {
+  display:none;
+}
+
+div.entry-content {
+  width: 100% !important;
+}
+
+form#form-reserve,
+form#form-reserve-sidebar {
+  display: flex; 
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: 800;
+}
+
+form#form-reserve-sidebar div {
+  width: 100%;
+}
+
+form#form-reserve-sidebar div.box-ida-vuelta {
+  display: flex;
+  margin-bottom: 15px;  
+}
+
+form#form-reserve-sidebar div.box-ida-vuelta div.input-ida {
+  width: 60%;
+}
+
+form#form-reserve-sidebar div.box-ida-vuelta label {
+  margin: 0px;
+}
+
+form#form-reserve-sidebar input[type=radio] {
+  margin-bottom: 0px;
+  height: 30px !important;
+}
+
+form#form-reserve select, 
+form#form-reserve input[type=text],
+form#form-reserve input[type=date],
+form#form-reserve input[type=number],
+form#form-reserve input[type=tel],
+form#form-reserve input[type=email],
+form#form-reserve-sidebar select, 
+form#form-reserve-sidebar input[type=text],
+form#form-reserve-sidebar input[type=date],
+form#form-reserve-sidebar input[type=number],
+form#form-reserve-sidebar input[type=tel],
+form#form-reserve-sidebar input[type=email],
+form#data-reserve select, 
+form#data-reserve input[type=text],
+form#data-reserve input[type=date],
+form#data-reserve input[type=number],
+form#data-reserve input[type=tel],
+form#data-reserve input[type=email]{
+  border: 2px solid #676e74;
+  max-width: 100%;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+  height: 48px;
+  padding-left: 3px;
+  background-color: #585d6b;
+}
+
+form#form-reserve-sidebar select, 
+form#form-reserve-sidebar input[type=text],
+form#form-reserve-sidebar input[type=date],
+form#form-reserve-sidebar input[type=number],
+form#data-reserve select, 
+form#data-reserve input[type=text],
+form#data-reserve input[type=date],
+form#data-reserve input[type=number],
+form#data-reserve input[type=tel],
+form#data-reserve input[type=email] {
+  border: 1px solid #e1e1e1;
+  background-color: white;
+  color: #8c8c8c;
+}
+
+form#form-reserve input[type=number],
+form#form-reserve-sidebar input[type=number] {
+  padding-left: 7px;
+}
+
+form#form-reserve input[type=radio] {
+  margin: 0 8px 0 0;
+}
+
+form#form-reserve-sidebar input[type=radio] {
+  margin: 0 0 0 8px;
+}
+
+form#form-reserve .input-fecha-ida,
+form#form-reserve .input-fecha-vuelta,
+form#form-reserve-sidebar .input-fecha-ida,
+form#form-reserve-sidebar .input-fecha-vuelta {
+  position: relative;
+}
+
+form#form-reserve .input-fecha-ida input,
+form#form-reserve .input-fecha-vuelta input,
+form#form-reserve-sidebar .input-fecha-ida input,
+form#form-reserve-sidebar .input-fecha-vuelta input{
+  padding-left: 7px;
+}
+
+#form-reserve [type="date"] {
+  background: url(../img/calendar.png)  99.7% 50% no-repeat;
+}
+
+#form-reserve-sidebar [type="date"],
+#data-reserve [type="date"] {
+  background: url(../img/calendar.png)  99% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+form#form-reserve div.text-box-total h3 {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+form#form-reserve div.text-box-total p.monto-total {
+  font-size: 1.2em;
+}
+
+form#data-culqi label {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+
+form#data-culqi button#culqui-pagar {
+  margin-top: 10px;
+  display: block;
+}
+
+form#data-culqi .expiration-data input {
+  display: inline-block;
+}
+
+form#data-culqi .expiration-data input.expiration-month {
+  width: 3em;
+}
+
+form#data-culqi .expiration-data input.expieration-year {
+  width: 4em;
+}
+
+form#data-culqi .expiration-data span.slash-separator {
+  font-size: 2em;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+
+form#form-reserve div.box-ida-vuelta div{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center
+}
+
+form#form-reserve div.box-ida-vuelta div label {
+  display: block;
+  order: 2;
+}
+
+form#form-reserve div.box-ida-vuelta div input {
+  display: block;
+  order: 1;
+}
+
+.box-button-pagar input[type=submit]{
+  width: 100%;
+}
+
+.box-button-pagar.sidebar  {
+  position: relative;
+  padding: 5px 0px;
+}
+
+input[type=submit].button-sidebar-reservar {
+  width: 100% !important;
+}
+
+.box-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100vh;
+}
+
+.box-mensaje {
+  position: absolute;
+  background: white;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  height: 140px;
+  top: calc(50vh - 70px);
+  left: calc(50% - 140px);
+  border: 1px solid #e1e1e1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-mensaje p {
+  margin: 0;
+}
+
+.box-mensaje button {
+  background: #4296ed;
+  border: none;
+  padding: 5px 25px;
+  color: white;
+  font-weight: 800;
+}
+
+form#data-reserve .steps-box {
+  display: flex;  
+  align-items: center;
+}
+
+form#data-reserve .steps-box .step {
+  width: 100%;
+  border: 1px solid #90a299;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 7px;
+}
+
+form#data-reserve .steps-box p.number {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  font-size: 2em;
+}
+
+form#data-reserve .line-connector {
+  border-top: 1px solid #90a299;
+  width: 100%;
+  margin: 0;
+}
+
+form#data-reserve .active {
+  background: #90a299;
+  color: white;
+}
+
+form#data-reserve .box-data-step {
+  display: none;
+}
+
+form#data-reserve #box-data-step-2 {
+  display: block;
+}
+
+form#data-reserve .box-data-step h3{
+  font-size: 2em;
+  margin-top: 25px;
+  text-align: center;
+}
+
+form#data-reserve .box-data-step .input-ida,
+form#data-reserve .box-data-step .input-ida-vuelta {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+form#data-reserve .box-ida-vuelta label {
+  order: 2;
+}
+
+form#data-reserve .box-ida-vuelta input[type=radio] {
+  order: 1;
+  margin: 0 7px 0 0;
+}
+
+form#data-reserve .input-destino,
+form#data-reserve .input-fecha-ida,
+form#data-reserve .input-fecha-vuelta,
+form#data-reserve .input-numero-adultos,
+form#data-reserve .input-numero-ninos {
+  margin-top: 7px;
+}
+
+form#data-reserve .next-step,
+form#data-reserve .back-step {
+  width: 100%;
+  background: #468ae7;
+  border:none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+form#data-reserve .back-step {
+  width: 100%;
+  background: #8c8c8c;
+}
+
+form#data-reserve .trenes h4,
+form#data-reserve .info-tren h4 {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+form#data-reserve .trenes table p {
+  margin: 0;
+  text-align: left;
+  padding-left: 7px;
+}
+
+form#data-reserve .info-tren table tr th {
+  background: #8c8c8c;
+  width: 50%;
+  text-align: left;
+  padding-left:7px;
+}
+
+form#data-reserve .adultos h4,
+form#data-reserve .ninos h4 {
+  font-size: 1.5em;
+  background: #8c8c8c;
+  color: white;
+  padding: 7px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+form#data-reserve .form-box {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+form#data-reserve .form-box p{
+  width: 100%;
+  margin: 0;
+}
+
+form#data-reserve .adultos .data-adulto,
+form#data-reserve .ninos .data-nino {
+  position: relative;
+}
+
+form#data-reserve .adultos .data-adulto::before,
+form#data-reserve .ninos .data-nino::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-right: 7px solid transparent;
+  border-top: 7px solid white;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.box-data-step h4 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+div.trenes table tbody tr {
+  cursor: pointer;
+}
+
+table#list-trenes h5,
+table#list-trenes-vuelta h5 {
+  font-size: 1.2em;
+  text-align: left;
+  margin: 0 0 0 7px;
+}
+
+table#list-trenes .data-tren,
+table#list-trenes-vuelta .data-tren {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table#list-trenes .data-tren p,
+table#list-trenes-vuelta .data-tren p {
+  margin: 0 7px 0 0;
+  width: 200px;
+}
+
+div.box-mensajes-error {
+  margin-bottom: 15px;
+}
+
+.mensaje-error {
+  color: #d45151;
+  margin: 0;
+  display: none;
+}
+
+#paypal-pay,
+#culqi-efectivo {
+  display: none;
+}
+
+.expiration-data {
+  display: flex;
+}
+
+.expiration-month {
+  width: 4em !important;
+}
+
+.expiration-year {
+  width: 8em !important;
+}
+
+.slash-separator {
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+.success-reserva-data ul {
+  list-style: none;
+  margin: 0 0 0 0;
+}
+
+.success-reserva-data ul li p:first-child {
+  padding: 5px 7px;
+  margin: 0;
+}
+
+.success-reserva-data ul li p {
+  padding: 0 0 0 7px;
+  margin-bottom: 7px;
+}
+
+#culqui-pagar,
+#culqui-pagar-efectivo {
+  width: 100%;
+  margin: auto;
+  background: #468ae7;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: block;
+  max-width: 754px;
+  height: 53px;
+  font-size: 22px;
+  border-radius: 4px;
+}
+
+#data-tren-ida h5,
+#data-tren-vuelta h5 {
+  font-size: 1em;
+  font-weight: normal;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#data-tren-ida .data-tren p,
+#data-tren-vuelta .data-tren p {
+  margin: 0;
+  padding: 0;
+}
+
+#data-tren-ida .data-tren p strong,
+#data-tren-vuelta .data-tren p strong {
+  font-weight: normal;
+}
+
+.pay-success h2 {
+  font-size: 2em;
+}
+
+.pay-success table caption h3 {
+  font-size: 1.5em;
+}
+
+.pay-success table tr td {
+  text-align: left;
+  padding: 0 0 0 3px;
+}
+
+.pay-success table tr td p {
+  margin: 0;
+  
+}
+
+.pay-success .go-to-home {
+  background-color: #4296ed;
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  color: #ffffff;
+  padding: 7px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#box-tren-ida {
+  margin-bottom: 50px;
+}
+
+.info .info-logo {
+  display: none;
+}
+
+#adulto-1 div.form-box {
+  display: flex;
+}
+
+div.culqi-pay-button {
+  margin-bottom: 63px;
+}
+
+div.box-pay {
+  margin-top: 56px;
+}
+
+div.cards {
+  display: flex;
+  justify-content: center;
+}
+
+div.cards div {
+  margin: 0 7px;
+}
+
+div.cards div img {
+  width: 84px;
+}
+
+@media (max-width: 768px) {
+
+  .list-trenes {
+    display: flex;
+  }
+
+  .list-trenes thead tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-trenes thead {
+    width: 120px;
+  }
+
+  .list-trenes tbody {
+    width: calc(100% - 120px);
+    overflow: scroll;
+    display: flex;
+  }
+
+  .list-trenes thead tr th {
+    width: 100%;
+    text-align: left;
+    padding-left: 7px;
+  }
+
+  .list-trenes tbody tr {
+    width: 100%;
+    display: block;
+    float: left;
+  }
+
+  .list-trenes tbody tr td{
+    display: block;
+    width: 180px; 
+    text-align: left;
+    padding-left: 7px;
+  }
+
+  table#list-trenes h5,
+  table#list-trenes-vuelta h5 {
+    margin: 0;
+  }
+
+  body.traveltour-body-front .traveltour-container {
+    max-width: 100%;
+  }
+
+  .traveltour-item-pdlr, .gdlr-core-item-pdlr {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  form#form-reserve div {
+    width: 100%;
+  }
+
+  form#form-reserve select,
+  form#form-reserve input[type=text],
+  form#form-reserve input[type=date]
+  form#form-reserve input[type=number],
+  form#form-reserve input[type=button],
+  form#form-reserve input[type=submit] {
+    width: 100%;
+    display: block;
+  }
+
+  form#form-reserve input[type=submit] {
+    margin-top: 10px;
+  } 
+}
+
+@media (min-width: 769px) {
+
+  form#data-reserve .form-box p{
+    width: 31%;
+    margin: 0 7px;
+  }
+
+  #box-reserva h3 {
+    width: 100%;
+  }
+
+  #box-reserva div.gdlr-core-item-pdlr {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 15px !important;
+  }
+
+  form#form-reserve div.box-ida-vuelta {
+    width: 100%; 
+    display: flex;
+  }
+
+  form#form-reserve div.box-ida-vuelta div.input-ida,
+  form#form-reserve div.box-ida-vuelta div.input-ida-vuelta {
+    width: 200px;
+  }
+
+  form#form-reserve {
+    font-weight: 800;
+  }
+
+  form#form-reserve label {
+    margin-bottom: 0px;
+  }
+
+  form#form-reserve div.box-destino-ruta {
+    width: 33%;
+  }
+
+  form#form-reserve div.box-fechas-numero {
+    width: 67%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form#form-reserve div.box-fechas-numero div {
+    width: 49%;
+    margin-left: 5px;
+  }
+
+  form#form-reserve div.box-tipo-pago-total {
+    width: 100%;
+    display: flex;
+  }
+
+  form#form-reserve div.box-button-pagar {
+    width: 100%;
+  }
+
+  form#form-reserve div.box-tipo-pago {
+    width: 24%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form#form-reserve div.box-tipo-pago h3 {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  form#form-reserve div.box-tipo-pago div {
+    width: 50%;
+    padding: 0px;
+    margin-top: -10px;
+  }
+
+  form#form-reserve div.text-box-total {
+    width: 40%;
+  }
+
+  form#form-reserve div.text-box-total p.monto-total {
+    margin-top: 10px;
+  }
+
+  form#form-reserve div.box-tipo-pago div label{
+    margin: 0px;
+    font-weight: 800;
+  }
+
+  form#form-reserve select,
+  form#form-reserve input[type=text],
+  form#form-reserve input[type=date]
+  form#form-reserve input[type=number],
+  form#form-reserve input[type=button],
+  form#form-reserve input[type=submit] {
+    width: 100%;
+    display: block;
+  }
+
+  form#form-reserve input[type=submit] {
+    margin-top: 10px;
+  }
+
+  form#data-culqi {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form#data-culqi > div {
+    width: 48%;
+    margin: 1%;
+  }
+
+  form#data-culqi div.expiration-data {
+    position: relative;
+    top: -5px;
+  }
+
+  .box-button-pagar input[type=submit] {
+    width: 250px;
+    margin:auto;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  #data-reserve [type="date"] {
+    background: url(../img/calendar.png)  99.7% 50% no-repeat;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  form#data-reserve {
+    max-width: 1024px;
+  }
+
+  form#data-reserve .next-step {
+    width: 300px;
+    position: relative;
+    left: calc(100% - 605px);
+  }
+
+  form#data-reserve .back-step {
+    width: 300px;
+    position: relative;
+    left: 0px;
+  }
+
+  form#data-reserve .steps-box .step {
+    width: 330px;
+    height: 100px;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  form#form-reserve input[type=submit] {
+    width: 200px;
+  }
+
+  form#form-reserve div.box-button-pagar {
+    margin-top: -20px;
+  }
+
+  form#data-reserve .info-tren table tr th {
+    width: 35%;
+  }
+
+  #culqui-pagar {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 49px;
+    margin-bottom: 21px;
+  }
+
+  .pay-success table tr th {
+    text-align: left; 
+    padding-left: 7px;
+    width: 217px;
+  }
+
+  .pay-success .go-to-home {
+    width: 217px;
+  }
+}
+

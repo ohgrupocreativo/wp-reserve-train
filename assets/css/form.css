@@ -1,0 +1,357 @@
+/*
+  Provisionales
+*/
+
+#box-reserva div.gdlr-core-item-pdlr {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+header.entry-header {
+  display:none;
+}
+
+div.entry-content {
+  width: 100% !important;
+}
+
+form#form-reserve,
+form#form-reserve-sidebar {
+  display: flex; 
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: 800;
+}
+
+form#form-reserve-sidebar div {
+  width: 100%;
+}
+
+form#form-reserve-sidebar div.box-ida-vuelta {
+  display: flex;
+  margin-bottom: 15px;  
+}
+
+form#form-reserve-sidebar div.box-ida-vuelta div.input-ida {
+  width: 60%;
+}
+
+form#form-reserve-sidebar div.box-ida-vuelta label {
+  margin: 0px;
+}
+
+form#form-reserve-sidebar input[type=radio] {
+  margin-bottom: 0px;
+  height: 30px !important;
+}
+
+form#form-reserve-sidebar input[type=radio] {
+  margin-bottom: 0px;
+  height: 30px !important;
+}
+
+form#form-reserve select, 
+form#form-reserve input[type=text],
+form#form-reserve input[type=date],
+form#form-reserve input[type=number],
+form#form-reserve input[type=tel],
+form#form-reserve input[type=email],
+form#form-reserve-sidebar select, 
+form#form-reserve-sidebar input[type=text],
+form#form-reserve-sidebar input[type=date],
+form#form-reserve-sidebar input[type=number],
+form#form-reserve-sidebar input[type=tel],
+form#form-reserve-sidebar input[type=email],
+form#data-reserve select, 
+form#data-reserve input[type=text],
+form#data-reserve input[type=date],
+form#data-reserve input[type=number],
+form#data-reserve input[type=tel],
+form#data-reserve input[type=email]{
+  border: 1px solid #c9d5e0;
+  max-width: 100%;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+  height: 48px;
+  padding-left: 3px;
+  background-color: white;
+}
+
+form#form-reserve-sidebar select, 
+form#form-reserve-sidebar input[type=text],
+form#form-reserve-sidebar input[type=date],
+form#form-reserve-sidebar input[type=number],
+form#data-reserve select, 
+form#data-reserve input[type=text],
+form#data-reserve input[type=date],
+form#data-reserve input[type=number],
+form#data-reserve input[type=tel],
+form#data-reserve input[type=email] {
+  border: 1px solid #e1e1e1;
+  background-color: white;
+  color: #8c8c8c;
+}
+
+form#form-reserve input[type=number],
+form#form-reserve-sidebar input[type=number] {
+  padding-left: 7px;
+}
+
+form#form-reserve input[type=radio] {
+  margin: 0 8px 0 0;
+}
+
+form#form-reserve-sidebar input[type=radio] {
+  margin: 0 0 0 8px;
+}
+
+form#form-reserve .input-fecha-ida,
+form#form-reserve .input-fecha-vuelta,
+form#form-reserve-sidebar .input-fecha-ida,
+form#form-reserve-sidebar .input-fecha-vuelta {
+  position: relative;
+}
+
+form#form-reserve .input-fecha-ida input,
+form#form-reserve .input-fecha-vuelta input,
+form#form-reserve-sidebar .input-fecha-ida input,
+form#form-reserve-sidebar .input-fecha-vuelta input{
+  padding-left: 7px;
+}
+
+#form-reserve-sidebar [type="date"],
+#data-reserve [type="date"] {
+  background: url(../img/calendar.png)  99% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+form#form-reserve div.text-box-total h3 {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+form#form-reserve div.text-box-total p.monto-total {
+  font-size: 1.2em;
+}
+
+form#form-reserve div.box-ida-vuelta div{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center
+}
+
+form#form-reserve div.box-ida-vuelta div label {
+  display: block;
+  order: 2;
+}
+
+form#form-reserve div.box-ida-vuelta div input {
+  display: block;
+  order: 1;
+}
+
+.box-button-pagar.sidebar  {
+  position: relative;
+  padding: 5px 0px;
+}
+
+.box-button-pagar input[type=submit] {
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+input[type=submit].button-sidebar-reservar {
+  width: 100% !important;
+}
+
+.box-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100vh;
+}
+
+.box-mensaje {
+  position: absolute;
+  background: white;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  height: 140px;
+  top: calc(50vh - 70px);
+  left: calc(50% - 140px);
+  border: 1px solid #e1e1e1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-mensaje p {
+  margin: 0;
+}
+
+.box-mensaje button {
+  background: #4296ed;
+  border: none;
+  padding: 5px 25px;
+  color: white;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+
+  body.traveltour-body-front .traveltour-container {
+    max-width: 100%;
+  }
+
+  .traveltour-item-pdlr, .gdlr-core-item-pdlr {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  form#form-reserve div {
+    width: 100%;
+  }
+
+  form#form-reserve select,
+  form#form-reserve input[type=text],
+  form#form-reserve input[type=date]
+  form#form-reserve input[type=number],
+  form#form-reserve input[type=button],
+  form#form-reserve input[type=submit] {
+    width: 100%;
+    display: block;
+  }
+
+  form#form-reserve input[type=submit] {
+    margin-top: 10px;
+  } 
+}
+
+@media (min-width: 769px) {
+
+  .box-button-pagar input[type=submit] {
+      width: 250px;
+      margin: auto;
+      display: block;
+      margin-bottom: 15px;
+  }
+
+  #box-reserva h3 {
+    width: 100%;
+  }
+
+  #box-reserva div.gdlr-core-item-pdlr {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 15px !important;
+  }
+
+  form#form-reserve div.box-ida-vuelta {
+    width: 100%; 
+    display: flex;
+  }
+
+  form#form-reserve div.box-ida-vuelta div.input-ida,
+  form#form-reserve div.box-ida-vuelta div.input-ida-vuelta {
+    width: 200px;
+  }
+
+  form#form-reserve {
+    font-weight: 800;
+  }
+
+  form#form-reserve label {
+    margin-bottom: 0px;
+  }
+
+  form#form-reserve div.box-destino-ruta {
+    width: 33%;
+  }
+
+  form#form-reserve div.box-fechas-numero {
+    width: 67%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form#form-reserve div.box-fechas-numero div {
+    width: 49%;
+    margin-left: 5px;
+  }
+
+  form#form-reserve div.box-tipo-pago-total {
+    width: 100%;
+    display: flex;
+  }
+
+  form#form-reserve div.box-button-pagar {
+    width: 100%;
+  }
+
+  form#form-reserve div.box-tipo-pago {
+    width: 24%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form#form-reserve div.box-tipo-pago h3 {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  form#form-reserve div.box-tipo-pago div {
+    width: 50%;
+    padding: 0px;
+    margin-top: -10px;
+  }
+
+  form#form-reserve div.text-box-total {
+    width: 40%;
+  }
+
+  form#form-reserve div.text-box-total p.monto-total {
+    margin-top: 10px;
+  }
+
+  form#form-reserve div.box-tipo-pago div label{
+    margin: 0px;
+    font-weight: 800;
+  }
+
+  form#form-reserve select,
+  form#form-reserve input[type=text],
+  form#form-reserve input[type=date]
+  form#form-reserve input[type=number],
+  form#form-reserve input[type=button],
+  form#form-reserve input[type=submit] {
+    width: 100%;
+    display: block;
+  }
+
+  form#form-reserve input[type=submit] {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  form#form-reserve input[type=submit] {
+    width: 200px;
+  }
+
+  form#form-reserve div.box-button-pagar {
+    margin-top: -20px;
+  }
+}

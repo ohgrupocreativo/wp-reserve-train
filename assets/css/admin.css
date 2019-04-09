@@ -1,0 +1,61 @@
+.form-loader,
+.form-success,
+.form-error {
+	display: none;
+	left: 5px;
+	position: relative;
+} 
+
+table.data-pasajeros {
+	display: flex;
+}
+
+table.data-pasajeros thead {
+	width: 30%;
+}
+
+table.data-pasajeros tbody {
+	width: 55%;
+	display: flex;
+	overflow: scroll;
+}
+
+table.data-pasajeros thead tr th{
+	font-size: 12px;
+	padding: 0 3px;
+	font-weight: normal;
+	background: #f1f1f1;
+	height: 42px;
+	padding: 3;
+	align-items: center;
+	display: flex;
+}
+
+table.data-pasajeros tbody tr td{
+	padding: 0 7px 0 3px;
+  height: 42px;
+	padding: 3;
+	align-items: center;
+	display: flex;
+}
+
+@media (min-width: 769px) {
+
+	table.data-pasajeros thead {
+		width: 35%;
+	}
+
+	table.data-pasajeros thead tr th{
+		width: 140px;
+	}	
+
+	table.data-pasajeros tbody tr td {
+		margin: 0;
+		padding: 0;
+	}
+
+	table.data-pasajeros tbody {
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+}
